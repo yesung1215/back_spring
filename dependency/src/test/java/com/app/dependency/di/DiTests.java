@@ -12,6 +12,9 @@ public class DiTests {
     @Autowired
     private Coding coding;
 
+    @Autowired
+    private Food food;
+
     @Test
     public void diTest01() {
         Computer computer = new Computer();
@@ -19,5 +22,9 @@ public class DiTests {
         log.info(coding.getComputer().toString());
     }
 
+    @Test
+    public void diTest02() {
+        log.info(food.getKnife().toString());
+    }
 
 }
